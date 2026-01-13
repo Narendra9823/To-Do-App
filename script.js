@@ -1,3 +1,12 @@
+/**
+ * Accessible To-Do List Application
+ * Features:
+ * - Add, delete, and complete tasks
+ * - Data persistence using localStorage
+ * - Keyboard and screen-reader accessible
+ */
+
+
 // Select elements
 const todoInput = document.getElementById("todo-input");
 const addBtn = document.getElementById("add-btn");
