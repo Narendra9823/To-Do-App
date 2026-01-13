@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible To-Do App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-container">
+        <h1>To-Do List</h1>
+
+        <!-- Input Section -->
+        <section class="todo-input-section">
+            <label for="todo-input">Add a new task</label>
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="todo-input" 
+                    placeholder="Enter your task"
+                    aria-label="Task input"
+                >
+                <button id="add-btn" aria-label="Add task">
+                    Add
+                </button>
+            </div>
+        </section>
+
+        <!-- Task List Section -->
+        <section class="todo-list-section">
+            <h2 class="visually-hidden">Task List</h2>
+            <ul id="todo-list">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
