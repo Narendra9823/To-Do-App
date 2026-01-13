@@ -21,16 +21,18 @@ function createTaskElement(taskText, completed = false) {
     const li = document.createElement("li");
 
     const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.checked = completed;
-    checkbox.setAttribute("aria-label", "Mark task as complete");
+checkbox.type = "checkbox";
+checkbox.checked = completed;
+checkbox.setAttribute("aria-label", `Mark ${taskText} as complete`);
+
 
     const span = document.createElement("span");
     span.textContent = taskText;
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
-    deleteBtn.setAttribute("aria-label", "Delete task");
+    deleteBtn.setAttribute("aria-label", `Delete ${taskText}`);
+
 
     if (completed) {
         li.classList.add("completed");

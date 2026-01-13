@@ -143,3 +143,10 @@ h1 {
 #todo-list button:focus {
     outline: 2px solid #333;
 }
+
+/* Focus visibility for accessibility */
+button:focus,
+input:focus {
+    outline: 3px solid #000;
+    outline-offset: 2px;
+}
