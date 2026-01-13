@@ -114,3 +114,32 @@ h1 {
         padding: 1.2rem;
     }
 }
+
+/* Task item layout */
+#todo-list li {
+    gap: 0.6rem;
+}
+
+/* Completed task style */
+#todo-list li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Delete button */
+#todo-list button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#todo-list button:hover {
+    background-color: #c0392b;
+}
+
+#todo-list button:focus {
+    outline: 2px solid #333;
+}
